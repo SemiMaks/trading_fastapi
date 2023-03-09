@@ -29,7 +29,7 @@ def users(user_id: int):
     return [users for users in fake_users if users.get('id') == user_id]
 
 
-@app.get('/trades/')
-def get_trades(limit: int = 10, offset: int = 10):
-    return fake_trades[offset:][:limit]
+# @app.get('/trades/')
+# def get_trades(limit: int = 10, offset: int = 10):
+#     return fake_trades[offset:][:limit]
 
